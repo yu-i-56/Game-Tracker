@@ -19,8 +19,11 @@ export async function addGame(data: z.infer<typeof gameSchema>) {
         title: data.title,
         genre: data.genre,
         platform: data.platform,
-        releaseDate: data.releaseDate ? new Date(data.releaseDate) : null,
-        imageUrl: data.imageUrl || null,
+        releaseDate:
+          data.releaseDate && !isNaN(Date.parse(data.releaseDate))
+            ? new Date(data.releaseDate)
+            : null,
+        imageUrl: data.imageUrl ?? "",
       },
     });
     revalidatePath("/games");
@@ -38,8 +41,11 @@ export async function updateGame(id: string, data: z.infer<typeof gameSchema>) {
         title: data.title,
         genre: data.genre,
         platform: data.platform,
-        releaseDate: data.releaseDate ? new Date(data.releaseDate) : null,
-        imageUrl: data.imageUrl || null,
+        releaseDate:
+          data.releaseDate && !isNaN(Date.parse(data.releaseDate))
+            ? new Date(data.releaseDate)
+            : null,
+        imageUrl: data.imageUrl ?? "",
       },
     });
     revalidatePath("/games");
