@@ -13,12 +13,12 @@ export default function Footer() {
         >
           <p
             className="text-center text-sm leading-loose
-          text-muted-foreground md:text-left"
+          text-muted-foreground px-8 md:text-left"
           >
             Build with Next.js, TypeScript, and Tailwind CSS
           </p>
         </div>
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-4 px-8">
           <Link
             className="text-sm text-muted-foreground
           hover:text-foreground"
