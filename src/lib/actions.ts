@@ -15,7 +15,16 @@ const gameSchema = z.object({
 export async function addGame(data: z.infer<typeof gameSchema>) {
   try {
     await prisma.game.create({
-      data,
+      data: {
+        title: data.title,
+        genre: data.genre,
+        platform: data.platform,
+        releaseDate:
+          data.releaseDate && !isNaN(Date.parse(data.releaseDate))
+            ? new Date(data.releaseDate)
+            : null,
+        imageUrl: data.imageUrl ?? "",
+      },
     });
     revalidatePath("/games");
     return { success: true };
@@ -28,7 +37,16 @@ export async function updateGame(id: string, data: z.infer<typeof gameSchema>) {
   try {
     await prisma.game.update({
       where: { id },
-      data,
+      data: {
+        title: data.title,
+        genre: data.genre,
+        platform: data.platform,
+        releaseDate:
+          data.releaseDate && !isNaN(Date.parse(data.releaseDate))
+            ? new Date(data.releaseDate)
+            : null,
+        imageUrl: data.imageUrl ?? "",
+      },
     });
     revalidatePath("/games");
     return { success: true };
