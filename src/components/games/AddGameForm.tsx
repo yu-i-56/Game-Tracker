@@ -11,7 +11,7 @@ export default function AddGameForm() {
     try {
       const result = await addGame({
         ...data,
-        releaseDate: data.releaseDate ? new Date(data.releaseDate) : undefined,
+        releaseDate: data.releaseDate || undefined,
       });
 
       if (result.success) {

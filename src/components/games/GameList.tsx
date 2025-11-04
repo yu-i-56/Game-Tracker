@@ -1,7 +1,7 @@
 import { Game } from "@/generated/prisma";
 import GameCard from "./GameCard";
 import { Button } from "@/components/ui/button";
-import { Link } from "lucide-react";
+import Link from "next/link";
 
 interface GameListProps {
   games: Game[];
