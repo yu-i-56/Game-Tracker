@@ -29,7 +29,11 @@ export async function addGame(data: z.infer<typeof gameSchema>) {
     revalidatePath("/games");
     return { success: true };
   } catch (error) {
-    return { success: false, error: "Failed to add game" };
+    console.error("Failed to add game:", error);
+    return {
+      success: false,
+      error: error instanceof Error ? error.message : "Failed to add game",
+    };
   }
 }
 
