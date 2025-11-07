@@ -1,37 +1,17 @@
-# ========================================
-# 本番環境用のDocker Compose設定
-# ========================================
 services:
-  # 本番環境用のNext.jsアプリケーション
   app:
-    # 本番環境用のDockerfileを使用
     build:
       context: .
       dockerfile: Dockerfile
-
-    # コンテナ名を指定
     container_name: game-tracker-prod
-
-    # ポートマッピング
     ports:
       - "3000:3000"
-
-    # 環境変数
     environment:
-      # データベースURL
       - DATABASE_URL=file:/app/prisma/prod.db
-      # Node.js環境
       - NODE_ENV=production
-
-    # ボリュームマウント（データベースの永続化）
     volumes:
-      # データベースファイルを永続化
       - db-data:/app/prisma
-
-    # コンテナの再起動ポリシー
     restart: always
-
-    # ヘルスチェック
     healthcheck:
       test:
         [
@@ -45,17 +25,9 @@ services:
       retries: 3
       start_period: 40s
 
-# ========================================
-# ボリューム定義
-# ========================================
 volumes:
-  # データベースファイルの永続化用ボリューム
   db-data:
     driver: local
-
-# ========================================
-# ネットワーク設定
-# ========================================
 networks:
   default:
     name: game-tracker-prod-network
