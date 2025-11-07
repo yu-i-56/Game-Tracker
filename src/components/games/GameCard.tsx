@@ -8,7 +8,7 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { Game } from "@/generated/prisma";
+import type { Game } from "@prisma/client";
 import { Edit } from "lucide-react";
 import { DeleteGameButton } from "./DeleteGameButton";
 

@@ -1,4 +1,4 @@
-import { Game } from "@/generated/prisma";
+import type { Game } from "@prisma/client";
 import GameCard from "./GameCard";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
