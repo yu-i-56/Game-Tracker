@@ -17,7 +17,8 @@ https://game-tracker-tawny.vercel.app/
 ---
 
 ### ダッシュボード
-<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/ae110196-cd65-47c9-a3ab-b435f3e7561e" />
+![Animation1](https://github.com/user-attachments/assets/55e12908-427c-4a69-b25d-8d251f33fd51)
+
 
 ### 一覧
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/c4446047-911f-4fee-b0cf-12ea68911b34" />
