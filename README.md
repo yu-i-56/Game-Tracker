@@ -1,8 +1,6 @@
 # Game Tracker
 
-Portfolio-ready game backlog tracker built with Next.js 16. Register the games you are playing, record release dates, add cover art links, and keep the list searchable.
 
-![Game Tracker screenshot](public/next.svg)
 
 ---
 
