@@ -9,7 +9,25 @@
   
 ゲーム体験、レビューを記録するアプリケーションです。
 日々の学習のアウトプットとして作成しています。
+
+ダッシュボード
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/ae110196-cd65-47c9-a3ab-b435f3e7561e" />
+
+一覧
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/c4446047-911f-4fee-b0cf-12ea68911b34" />
+
+追加フォーム
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/ad17dc60-42b0-4029-9255-f12e3b17a03f" />
+
+削除
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/52a97640-34e2-42dc-b2b4-04f8b3f65beb" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/3bb53b1e-3deb-4095-8896-30c5a14c0632" />
+
+
+
+
+
+
 
 ---
 
