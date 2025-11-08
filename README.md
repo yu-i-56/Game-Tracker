@@ -24,13 +24,11 @@ https://game-tracker-tawny.vercel.app/
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/c4446047-911f-4fee-b0cf-12ea68911b34" />
 
 ### 追加フォーム
-<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/ad17dc60-42b0-4029-9255-f12e3b17a03f" />
+![Animation2](https://github.com/user-attachments/assets/2a74ec8d-efcf-437a-bb32-06e36c3ab9d3)
 
 ### 削除確認
-<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/52a97640-34e2-42dc-b2b4-04f8b3f65beb" />
+![Animation3](https://github.com/user-attachments/assets/3ea9f469-2d74-45ac-89ed-31e3d7f63e48)
 
-### 削除通知
-<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/3bb53b1e-3deb-4095-8896-30c5a14c0632" />
 
 ---
 
