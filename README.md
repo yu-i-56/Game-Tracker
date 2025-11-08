@@ -1,85 +1,68 @@
 # Game Tracker
-
-Portfolio-ready game backlog tracker built with Next.js 16. Register the games you are playing, record release dates, add cover art links, and keep the list searchable.
-
-![Game Tracker screenshot](public/next.svg)
-
----
-
-## ✨ Features
-
-- Create, update, and delete game entries with platform, genre, and release date
-- Instant client-side validation with React Hook Form × Zod
-- Searchable/paginated list backed by server actions (Prisma + SQLite/PostgreSQL)
-- Toast notifications for create/delete success states
-- Responsive UI components (Radix UI, Tailwind CSS)
+※ 現在開発中のプロジェクトです。  
+今後は以下の機能を実装予定：
+- ゲーム詳細
+- レビュー・評価機能
+- データ分析機能
+- UX改善/UI改善
+  
+ゲーム体験、レビューを記録するアプリケーションです。  
+日々の学習のアウトプットとして作成しています。 
 
 ---
 
-## 🧱 Tech Stack
-
-- **Framework**: Next.js 16 (App Router) / React 19 / TypeScript 5
-- **Database**: Prisma ORM (SQLite for local dev, PostgreSQL in production)
-- **UI**: Tailwind CSS, Radix UI primitives, Lucide icons
-- **Forms**: React Hook Form, @hookform/resolvers, Zod
-- **Feedback**: sonner toast notifications
+## URL
+https://game-tracker-tawny.vercel.app/
 
 ---
 
-## 🚀 Getting Started (Local)
+### ダッシュボード
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/ae110196-cd65-47c9-a3ab-b435f3e7561e" />
 
-```bash
-# 1. Install dependencies
-npm install
+### 一覧
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/c4446047-911f-4fee-b0cf-12ea68911b34" />
 
-# 2. Create .env.local
-echo "DATABASE_URL=file:./dev.db" > .env.local
+### 追加フォーム
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/ad17dc60-42b0-4029-9255-f12e3b17a03f" />
 
-# 3. Setup database & Prisma client
-npx prisma migrate deploy
+### 削除確認
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/52a97640-34e2-42dc-b2b4-04f8b3f65beb" />
 
-# 4. Start the dev server
-npm run dev
-```
-
-Access the app at [http://localhost:3000](http://localhost:3000).
-
-> **Tip**: Docker compose files are included for personal use, but a plain Node.js setup is enough for most viewers.
+### 削除通知
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/3bb53b1e-3deb-4095-8896-30c5a14c0632" />
 
 ---
 
-## 📦 Available Scripts
+## 技術スタック
 
-| Script | Description |
-| --- | --- |
-| `npm run dev` | Start Next.js in development mode |
-| `npm run build` | Create an optimized production build |
-| `npm run start` | Run the production server (after build) |
-| `npm run lint` | Execute ESLint |
-
----
-
-## 🌐 Deployment
-
-1. Provision a managed PostgreSQL instance (Neon/Supabase/etc.).
-2. Update `.env.production` (or Vercel env vars) with the `DATABASE_URL`.
-3. Run `npx prisma migrate deploy` against the production database.
-4. Deploy via Vercel (recommended) or any platform that supports Next.js standalone output.
-
-Detailed step-by-step instructions are documented in [`think/docs/game-tracker-deploy.md`](../think/docs/game-tracker-deploy.md).
+- Next.js 16 (App Router)  
+- TypeScript  
+- Tailwind CSS  
+- shadcn/ui  
+- Prisma  
+- PostgreSQL (Neon)  
+- Vercel  
 
 ---
 
-## 📌 Project Status
+## 実装済み機能
 
-This application is under active development. Upcoming items include:
-
-- Review & rating capture for each game
-- Time tracking dashboard
-- User authentication
+- 基本レイアウト
+- ダークモード
+- ゲームの登録
+- ゲームの一覧表示
+- ゲームの削除
+- 一覧内検索
+- DB連携
 
 ---
 
-## 📄 License
+## 今後の機能実装予定
+- ゲーム詳細
+- レビュー・評価機能
+- データ分析機能
+- UX改善/UI改善
 
-This project is released under the MIT License. See `LICENSE` for details.
+---
+
+
