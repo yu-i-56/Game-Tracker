@@ -9,6 +9,7 @@
   
 ゲーム体験、レビューを記録するアプリケーションです。
 日々の学習のアウトプットとして作成しています。
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/ae110196-cd65-47c9-a3ab-b435f3e7561e" />
 
 ---
 
