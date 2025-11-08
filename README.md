@@ -1,35 +1,44 @@
 # Game Tracker
 ※ 現在開発中のプロジェクトです。
   今後は以下の機能を実装予定：
+  - ゲーム詳細
   - レビュー・評価機能
   - データ分析機能
-  - UI改善
   - UX改善
+  - UI改善
   
 ゲーム体験、レビューを記録するアプリケーションです。
 日々の学習のアウトプットとして作成しています。
 
+---
 
+## 技術スタック
+
+- Next.js 16 (App Router)
+- TypeScript
+- Tailwind CSS
+- shadcn/ui
+- Prisma
+- PostgreSQL (Neon)
+- Vercel
 
 ---
 
-## ✨ Features
+## 実装済み機能
 
-- Create, update, and delete game entries with platform, genre, and release date
-- Instant client-side validation with React Hook Form × Zod
-- Searchable/paginated list backed by server actions (Prisma + SQLite/PostgreSQL)
-- Toast notifications for create/delete success states
-- Responsive UI components (Radix UI, Tailwind CSS)
+- ダッシュボード画面
+- ゲームの登録
+- ゲームの一覧表示
+- ゲームの削除
+- 一覧内検索
+- DB連携
 
----
-
-## 🧱 Tech Stack
-
-- **Framework**: Next.js 16 (App Router) / React 19 / TypeScript 5
-- **Database**: Prisma ORM (SQLite for local dev, PostgreSQL in production)
-- **UI**: Tailwind CSS, Radix UI primitives, Lucide icons
-- **Forms**: React Hook Form, @hookform/resolvers, Zod
-- **Feedback**: sonner toast notifications
+今後は以下の機能を実装予定：
+- ゲーム詳細
+- レビュー・評価機能
+- データ分析機能
+- UX改善
+- UI改善
 
 ---
 
