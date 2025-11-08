@@ -2,9 +2,9 @@ import { cn } from "@/lib/utils";
 import { BarChart3, Home, Plus, Settings } from "lucide-react";
 import Link from "next/link";
 
-interface NavigationProps {
+type NavigationProps = {
   className?: string;
-}
+};
 
 export function Navigation({ className }: NavigationProps) {
   const navItems = [

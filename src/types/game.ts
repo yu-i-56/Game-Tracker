@@ -1,4 +1,4 @@
-export interface Game {
+export type Game = {
   id: string;
   title: string;
   genre: string;
@@ -7,9 +7,9 @@ export interface Game {
   imageUrl?: string;
   createdAt: Date;
   updatedAt: Date;
-}
+};
 
-export interface GameRecord {
+export type GameRecord = {
   id: string;
   gameId: string;
   playStatus: "未プレイ" | "プレイ中" | "クリア済み" | "中断";
@@ -21,4 +21,4 @@ export interface GameRecord {
   createdAt: Date;
   updatedAt: Date;
   game?: Game;
-}
+};

@@ -43,11 +43,11 @@ const gameSchema = z.object({
 
 type GameFormValues = z.infer<typeof gameSchema>;
 
-interface GameFormProps {
+type GameFormProps = {
   initialData?: Partial<GameFormValues>;
   onSubmit: (data: GameFormValues) => Promise<void>;
   submitLabel?: string;
-}
+};
 
 export default function GameForm({
   initialData,

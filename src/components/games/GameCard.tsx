@@ -12,9 +12,9 @@ import type { Game } from "@prisma/client";
 import { Edit } from "lucide-react";
 import { DeleteGameButton } from "./DeleteGameButton";
 
-interface GameCardProps {
+type GameCardProps = {
   game: Game;
-}
+};
 
 export default function GameCard({ game }: GameCardProps) {
   return (

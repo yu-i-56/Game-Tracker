@@ -16,9 +16,9 @@ import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { TrashIcon } from "lucide-react";
 
-interface DeleteGameButtonProps {
+type DeleteGameButtonProps = {
   gameId: string;
-}
+};
 
 export function DeleteGameButton({ gameId }: DeleteGameButtonProps) {
   const [isOpen, setIsOpen] = useState(false);

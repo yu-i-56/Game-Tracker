@@ -11,7 +11,6 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  NavigationMenuViewport,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 
@@ -23,7 +22,7 @@ export default function Header() {
 
   return (
     <header className="px-4 sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60">
-      <div className="container flex h-14 items-center">
+      <div className="max-w-none flex h-14 items-center">
         <div className="mr-4 hidden md:flex">
           <Link className="mr-6 flex items-center space-x-2" href="/">
             <span className="hidden font-bold sm:inline-block">
@@ -96,7 +95,6 @@ export default function Header() {
             </NavigationMenuList>
           </NavigationMenu>
         </div>
-        {/* モバイルメニューボタン（将来実装予定） */}
         <Button
           variant="ghost"
           className="mr-2 px-0 text-base hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 md:hidden"
@@ -104,10 +102,7 @@ export default function Header() {
           <Menu className="h-5 w-5" />
           <span className="sr-only">Toggle Menu</span>
         </Button>
-        <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
-          <div className="w-full flex-1 md:w-auto md:flex-none">
-            {/* 検索バー（将来実装） */}
-          </div>
+        <div className="flex flex-1 items-center justify-end gap-3 pr-3">
           <nav className="flex items-center">
             <Button
               variant="ghost"

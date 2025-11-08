@@ -3,11 +3,11 @@ import GameCard from "./GameCard";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
-interface GameListProps {
+type GameListProps = {
   games: Game[];
   total: number;
   currentPage: number;
-}
+};
 
 export default function GameList({ games, total, currentPage }: GameListProps) {
   if (games.length === 0) {
