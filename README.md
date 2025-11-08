@@ -35,13 +35,13 @@ https://game-tracker-tawny.vercel.app/
 
 ## 技術スタック
 
-- Next.js 16 (App Router) **
-- TypeScript ** 
-- Tailwind CSS **
-- shadcn/ui **
-- Prisma ** 
-- PostgreSQL (Neon) **
-- Vercel **
+- Next.js 16 (App Router)  
+- TypeScript  
+- Tailwind CSS  
+- shadcn/ui  
+- Prisma  
+- PostgreSQL (Neon)  
+- Vercel  
 
 ---
 
