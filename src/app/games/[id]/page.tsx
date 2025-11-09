@@ -7,9 +7,9 @@ import Link from "next/link";
 import { Plus } from "lucide-react";
 
 type Params = {
-  params: {
+  params: Promise<{
     id?: string;
-  };
+  }>;
 };
 
 export default async function GameDetailPage({ params }: Params) {
