@@ -3,9 +3,9 @@ import { notFound } from "next/navigation";
 import { prisma } from "@/lib/prisma";
 
 type Params = {
-  params: {
+  params: Promise<{
     id?: string;
-  };
+  }>;
 };
 
 export default async function ReviewPage({ params }: Params) {
