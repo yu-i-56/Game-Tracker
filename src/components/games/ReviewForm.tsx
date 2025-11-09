@@ -145,7 +145,11 @@ export function ReviewForm({
               <FormLabel>評価</FormLabel>
               <div className="flex items-center gap-1">
                 {[1, 2, 3, 4, 5].map((star) => (
-                  <Button key={star} onClick={() => setRating(star)}>
+                  <Button
+                    type="button"
+                    key={star}
+                    onClick={() => setRating(star)}
+                  >
                     <Star
                       className={cn(
                         "h-6 w-6 cursor-pointer transition-colors",
