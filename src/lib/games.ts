@@ -13,7 +13,7 @@ export async function getGames(searchParams: {
     typeof searchParams.page === "string" ? parseInt(searchParams.page) : 1;
 
   const where = {
-    title: { contains: search },
+    title: { contains: search, mode: "insensitive" as const },
     genre: genre && genre !== "all" ? { equals: genre } : undefined,
     platform: platform && platform !== "all" ? { equals: platform } : undefined,
   };

@@ -1,6 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
-import { addGame } from "@/lib/actions";
+import { addGame } from "@/lib/gameActions";
 import GameForm from "./GameForm";
 import { toast } from "sonner";
 

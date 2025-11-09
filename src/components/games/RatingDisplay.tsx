@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 
 type RatingDisplayProps = {
   rating: number;
-  maxRating: number;
+  maxRating?: number;
   size?: "sm" | "md" | "lg";
 };
 
