@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/alert-dialog";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { deleteGame } from "@/lib/actions";
+import { deleteGame } from "@/lib/gameActions";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { TrashIcon } from "lucide-react";
