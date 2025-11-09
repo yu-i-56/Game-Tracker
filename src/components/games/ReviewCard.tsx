@@ -26,7 +26,7 @@ export function ReviewCard({ review, onEdit, onDelete }: ReviewCardProps) {
     }
   };
   return (
-    <Card>
+    <Card className="hover:shadow-lg transition-shadow">
       <CardHeader>
         <div className="flex items-start justify-between">
           <div className="flex items-center gap-2">

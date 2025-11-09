@@ -147,6 +147,7 @@ export function ReviewForm({
                 {[1, 2, 3, 4, 5].map((star) => (
                   <Button
                     type="button"
+                    variant="ghost"
                     key={star}
                     onClick={() => setRating(star)}
                   >
@@ -164,6 +165,7 @@ export function ReviewForm({
                 {rating !== null && rating > 0 && (
                   <Button
                     className="ml-2 text-sm text-muted-foreground hover:underline"
+                    variant="ghost"
                     onClick={() => setRating(null)}
                   >
                     クリア
@@ -191,33 +193,30 @@ export function ReviewForm({
               )}
             />
 
-            <div>
-              <FormField
-                control={form.control}
-                name="playStartDate"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>プレイ開始日</FormLabel>
-                    <FormControl>
-                      <Input type="date" {...field} />
-                    </FormControl>
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="playEndDate"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>プレイ終了日</FormLabel>
-                    <FormControl>
-                      <Input type="date" {...field} />
-                    </FormControl>
-                  </FormItem>
-                )}
-              />
-            </div>
-
+            <FormField
+              control={form.control}
+              name="playStartDate"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>プレイ開始日</FormLabel>
+                  <FormControl>
+                    <Input type="date" {...field} />
+                  </FormControl>
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="playEndDate"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>プレイ終了日</FormLabel>
+                  <FormControl>
+                    <Input type="date" {...field} />
+                  </FormControl>
+                </FormItem>
+              )}
+            />
             <div className="flex flex-col-reverse sm:flex-row sm:justify-between pt-6 gap-3 mt-6 border-t">
               <Button variant="outline" asChild className="w-full sm:w-auto">
                 <Link href={`/games/${gameId}`}>戻る</Link>
