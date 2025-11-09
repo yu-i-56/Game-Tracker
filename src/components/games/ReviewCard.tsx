@@ -4,7 +4,10 @@ import { GameRecord } from "@prisma/client";
 import { RatingDisplay } from "./RatingDisplay";
 import { formatDistanceToNow } from "date-fns";
 import { ja } from "date-fns/locale";
-import { ClockIcon } from "lucide-react";
+import { ClockIcon, Pencil } from "lucide-react";
+import { DeleteReviewButton } from "./DeleteReviewButton";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 type ReviewCardProps = {
   review: GameRecord;
@@ -41,6 +44,15 @@ export function ReviewCard({ review, onEdit, onDelete }: ReviewCardProps) {
                 })}
               </span>
             )}
+          </div>
+          <div className="flex items-center gap-1">
+            <Button variant="ghost" size="icon" asChild>
+              <Link href={`/games/${review.gameId}/review/${review.id}`}>
+                <Pencil className="h-4 w-4" />
+                <span className="sr-only">編集</span>
+              </Link>
+            </Button>
+            <DeleteReviewButton reviewId={review.id} gameId={review.gameId} />
           </div>
         </div>
       </CardHeader>

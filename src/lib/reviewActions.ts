@@ -42,6 +42,7 @@ export async function addReview(
 
 export async function updateReview(
   id: string,
+  gameId: string,
   data: z.infer<typeof reviewSchema>
 ) {
   try {
@@ -49,6 +50,7 @@ export async function updateReview(
       where: { id },
       data: {
         ...data,
+        rating: data.rating ?? null,
         playStartDate:
           data.playStartDate && !isNaN(Date.parse(data.playStartDate))
             ? new Date(data.playStartDate)
@@ -60,7 +62,7 @@ export async function updateReview(
       },
     });
     revalidatePath("/games");
-    revalidatePath(`/games/${id}`);
+    revalidatePath(`/games/${gameId}`);
     return { success: true };
   } catch (error) {
     console.error("failed to update review:", error);
