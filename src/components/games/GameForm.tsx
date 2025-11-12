@@ -124,6 +124,9 @@ export default function GameForm({
                       </SelectItem>
                       <SelectItem value="パズル">パズル</SelectItem>
                       <SelectItem value="スポーツ">スポーツ</SelectItem>
+                      <SelectItem value="シューティング">
+                        シューティング
+                      </SelectItem>
                     </SelectContent>
                   </Select>
                   <FormMessage />

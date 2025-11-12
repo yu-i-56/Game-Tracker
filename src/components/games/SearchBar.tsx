@@ -61,6 +61,7 @@ export default function SearchBar() {
           <SelectItem value="シミュレーション">シミュレーション</SelectItem>
           <SelectItem value="パズル">パズル</SelectItem>
           <SelectItem value="スポーツ">スポーツ</SelectItem>
+          <SelectItem value="シューティング">シューティング</SelectItem>
         </SelectContent>
       </Select>
       <Select

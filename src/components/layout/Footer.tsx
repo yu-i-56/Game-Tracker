@@ -19,13 +19,13 @@ export default function Footer() {
           </p>
         </div>
         <div className="flex items-center space-x-4 px-8">
-          <Link
+          <a
             className="text-sm text-muted-foreground
           hover:text-foreground"
-            href="/github"
+            href="https://github.com/yu-i-56/Game-Tracker"
           >
             GitHub
-          </Link>
+          </a>
           <Link
             className="text-sm text-muted-foreground
           hover:text-foreground"
