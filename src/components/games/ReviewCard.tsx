@@ -36,9 +36,9 @@ export function ReviewCard({ review, onEdit, onDelete }: ReviewCardProps) {
             <Badge className={getPlayStatusColor(review.playStatus)}>
               {review.playStatus}
             </Badge>
-            {review.playStartDate && (
+            {review.createdAt && (
               <span className="text-sm text-muted-foreground">
-                {formatDistanceToNow(new Date(review.playStartDate), {
+                {formatDistanceToNow(new Date(review.createdAt), {
                   addSuffix: true,
                   locale: ja,
                 })}
@@ -83,7 +83,7 @@ export function ReviewCard({ review, onEdit, onDelete }: ReviewCardProps) {
           )}
           {review.playEndDate && (
             <span>
-              開始: {new Date(review.playEndDate).toLocaleDateString("ja-JP")}
+              終了: {new Date(review.playEndDate).toLocaleDateString("ja-JP")}
             </span>
           )}
         </div>

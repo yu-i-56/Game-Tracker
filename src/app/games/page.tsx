@@ -19,7 +19,7 @@ export default async function GamePages({
         <div>
           <h1 className="text-2xl font-bold mt-2">ゲーム一覧</h1>
           <p className="text-muted-foreground mt-2">
-            合計 {total}件のゲームが登録されています
+            合計 {total}件のゲームを表示します
           </p>
         </div>
         <Button asChild>
