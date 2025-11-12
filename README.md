@@ -34,7 +34,7 @@ https://game-tracker-tawny.vercel.app/
 ### 詳細
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/590f0e25-1366-4bd2-b87a-c2efc7416908" />
 
-### レビュー追加
+### レビューフォーム
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/da327bb9-9c62-4da7-a736-1abe9860ce08" />
 
 
