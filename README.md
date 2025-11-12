@@ -27,7 +27,8 @@ https://game-tracker-tawny.vercel.app/
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/cdd9ebf6-28e9-4e73-9d36-4837d86492c7" />
 
 ### 削除確認
-![Uploading image.png…]()
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/080bb2a4-07ad-45a1-b3e6-9ac32973090b" />
+
 
 
 ![AnimationDelete](https://github.com/user-attachments/assets/b5949906-7edf-4175-aa5c-8d13722e7808)
