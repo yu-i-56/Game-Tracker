@@ -66,7 +66,7 @@ export default function Header() {
                 <NavigationMenuTrigger>統計</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid gap-2 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-                    <ListItem href="/stats/genres" title="概要">
+                    <ListItem href="/stats" title="概要">
                       プレイ統計の概要を表示
                     </ListItem>
                     <ListItem href="/stats/genres" title="ジャンル別">

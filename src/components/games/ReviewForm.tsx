@@ -88,6 +88,10 @@ export function ReviewForm({
 
   return (
     <Card className="hover:shadow-lg transition-all duration-200 border-2">
+      <CardHeader>
+        <CardTitle>レビューを追加</CardTitle>
+        <CardDescription>レビューの情報を入力してください</CardDescription>
+      </CardHeader>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(handleSubmit)}>
           <CardContent className="space-y-4">
