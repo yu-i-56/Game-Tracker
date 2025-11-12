@@ -14,7 +14,7 @@ export default async function RecentGamePages() {
         <div>
           <h1 className="text-2xl font-bold mt-2">最近追加したゲーム一覧</h1>
           <p className="text-muted-foreground mt-2">
-            最近追加した {recentGames.length}件のゲームを表示
+            最近追加したゲームを表示します
           </p>
         </div>
         <Button asChild>

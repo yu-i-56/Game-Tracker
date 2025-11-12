@@ -27,14 +27,13 @@ export default async function ReviewPage({ params }: Params) {
   }
 
   return (
-    <div className="container mx-auto px-4 py-8 space-y-8">
-      <header>
+    <div className="flex items-center justify-center flex-col mt-10">
+      <header className="text-center">
         <h1 className="text-3xl font-bold">{game.title}</h1>
-        <p className="text-md text-muted-foreground">
-          レビューを入力してください
-        </p>
       </header>
-      <AddReviewForm gameId={id} />
+      <div className="rounded-2xl p-8 max-w-2xl w-full">
+        <AddReviewForm gameId={id} />
+      </div>
     </div>
   );
 }

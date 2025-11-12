@@ -17,15 +17,17 @@ export function ReviewList({ reviews, onEdit, onDelete }: ReviewListProps) {
   }
 
   return (
-    <div className="space-y-4">
-      {reviews.map((review) => (
-        <ReviewCard
-          key={review.id}
-          review={review}
-          onEdit={onEdit}
-          onDelete={onDelete}
-        />
-      ))}
-    </div>
+    <>
+      <div className="space-y-4">
+        {reviews.map((review) => (
+          <ReviewCard
+            key={review.id}
+            review={review}
+            onEdit={onEdit}
+            onDelete={onDelete}
+          />
+        ))}
+      </div>
+    </>
   );
 }

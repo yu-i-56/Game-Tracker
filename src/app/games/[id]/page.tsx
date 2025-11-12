@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Plus } from "lucide-react";
+import Image from "next/image";
 
 type Params = {
   params: Promise<{
@@ -44,15 +45,19 @@ export default async function GameDetailPage({ params }: Params) {
             )}
           </div>
         </div>
-        <Button asChild>
-          <Link href={`/games/${game.id}/review`}>
-            <Plus className="mr-2 h-4 w-4" />
-            レビューを追加
-          </Link>
-        </Button>
       </div>
       <section>
-        <h2 className="text-2xl font-bold">レビュー一覧</h2>
+        <div className="flex items-center justify-between mb-3">
+          <p className="text-muted-foreground mt-2">
+            レビュー ({game.records.length})件
+          </p>
+          <Button asChild>
+            <Link href={`/games/${game.id}/review`}>
+              <Plus className="mr-2 h-4 w-4" />
+              レビューを追加
+            </Link>
+          </Button>
+        </div>
         <ReviewList reviews={game.records} />
       </section>
     </div>
