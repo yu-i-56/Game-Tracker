@@ -20,7 +20,8 @@ https://game-tracker-tawny.vercel.app/
 
 
 ### 一覧
-<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/c4446047-911f-4fee-b0cf-12ea68911b34" />
+![Animation](https://github.com/user-attachments/assets/0c88e146-bb95-4de4-bec5-092b9a081dc3)
+
 
 ### 追加フォーム
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/cdd9ebf6-28e9-4e73-9d36-4837d86492c7" />
