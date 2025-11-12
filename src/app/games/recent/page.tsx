@@ -24,9 +24,6 @@ export default async function RecentGamePages() {
           </Link>
         </Button>
       </div>
-      <div className="mb-6">
-        <SearchBar />
-      </div>
       <Suspense fallback={<div>Loading...</div>}>
         <GameList games={recentGames} total={recentGames.length} />
       </Suspense>
