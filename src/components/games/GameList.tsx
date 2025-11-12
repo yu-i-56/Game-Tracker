@@ -17,7 +17,7 @@ export default function GameList({ games, total, currentPage }: GameListProps) {
       </div>
     );
   }
-  const totalPages = Math.ceil(total / 10);
+  const totalPages = Math.ceil(total / 9);
 
   return (
     <>

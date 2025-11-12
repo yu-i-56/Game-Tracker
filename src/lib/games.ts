@@ -22,8 +22,8 @@ export async function getGames(searchParams: {
     prisma.game.findMany({
       where,
       orderBy: { createdAt: "desc" },
-      skip: (page - 1) * 10,
-      take: 10,
+      skip: (page - 1) * 9,
+      take: 9,
     }),
     prisma.game.count({ where }),
   ]);
