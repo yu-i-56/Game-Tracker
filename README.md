@@ -20,18 +20,31 @@ https://game-tracker-tawny.vercel.app/
 
 
 ### 一覧
-<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/c4446047-911f-4fee-b0cf-12ea68911b34" />
+![Animation](https://github.com/user-attachments/assets/0c88e146-bb95-4de4-bec5-092b9a081dc3)
+
 
 ### 追加フォーム
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/cdd9ebf6-28e9-4e73-9d36-4837d86492c7" />
 
-![Animation2](https://github.com/user-attachments/assets/2a74ec8d-efcf-437a-bb32-06e36c3ab9d3)
-
 ### 削除確認
-<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/35650126-deba-4cd3-9698-5096359ef623" />
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/8617c6df-d95d-4ce0-bd57-0f41c112f1ec" />
 
-![Animation3](https://github.com/user-attachments/assets/3ea9f469-2d74-45ac-89ed-31e3d7f63e48)
+![AnimationDelete](https://github.com/user-attachments/assets/b5949906-7edf-4175-aa5c-8d13722e7808)
 
+### 詳細
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/590f0e25-1366-4bd2-b87a-c2efc7416908" />
+
+### レビューフォーム
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/da327bb9-9c62-4da7-a736-1abe9860ce08" />
+
+
+---
+
+## 工夫点
+
+基本的なCRUDの機能は実装するだけではなく、shadcn/uiを用いて
+モダンで統一感のあるデザインと再利用性の高さを実現し、  
+UIの一貫性と開発効率を両立させ、見やすいアプリケーションを目指しました。
 
 ---
 
