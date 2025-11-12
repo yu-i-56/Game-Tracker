@@ -1,4 +1,4 @@
-<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/dd0d3538-02f1-41a4-929e-4c2f3b68779e" /># Game Tracker
+# Game Tracker
 ※ 現在開発中のプロジェクトです。  
 今後は以下の機能を実装予定：
 
