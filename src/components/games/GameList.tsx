@@ -6,7 +6,7 @@ import Link from "next/link";
 type GameListProps = {
   games: Game[];
   total: number;
-  currentPage: number;
+  currentPage?: number;
 };
 
 export default function GameList({ games, total, currentPage }: GameListProps) {

@@ -29,3 +29,11 @@ export async function getGames(searchParams: {
   ]);
   return { games, total, page };
 }
+
+export async function getRecentGames(limit: number = 6) {
+  const recentGames = await prisma.game.findMany({
+    orderBy: { createdAt: "desc" },
+    take: limit,
+  });
+  return recentGames;
+}
